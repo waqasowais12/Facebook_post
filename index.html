@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: dodgerblue;">
+    <!-- <div class="container">
+        <div class="row">
+            <div class="nav">
+            <div class="col-6">
+                <div class="logo">
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="box">
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="head">
+                        <div>
+                            <h5 class="post-head" id="items1">Create Post</h5>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-4">
+                    <div class="cross">
+                        <div>
+                            <i onclick="pagereset()" class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color: black;z-index: -1;">
+        </div>
+                <div class="profile">
+                        <div>
+                          <img src="images/159025701_887439495405981_1205296167039108764_n.jpg" alt="">
+                        </div>
+                        <div>
+                            <p style="color: black;">Muhammad Waqas Khan</p>
+                            <span>
+                               <select name="" id="">
+                                <option>Group</option>
+                                <option>All Friends</option>
+                                <option>Private</option>
+                               </select>
+                            </span>
+                        </div>
+                </div>
+                <br>
+        <div class="container">
+            <div class="row">
+            <div class="col-12">
+                <div class="txt-area">
+                    <div id="post-bacground">
+                        <textarea id="txt" placeholder="What's on your mind?"></textarea>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br>
+        <div id="items">
+            <div class="row justify-content-evenly">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img1.avif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img4.avif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img9.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img11.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-2">
+                    <div class="box1">
+                        <div>
+                        <img onclick="setbackground()" src="images/img12.avif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+           <div class="row justify-content-evenly font-style">
+            <div class="col-lg-1 col-2">
+                <div class="bold">
+                    <div>
+                        <h5 onclick="changestyle()">B</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2">
+                <div class="italic">
+                    <div>
+                        <h5 onclick="changestyle()">I</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2">
+                <div class="underline">
+                    <div>
+                        <h5 style="text-decoration: underline;" onclick="changestyle()">U</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2">
+                <div class="font-space">
+                    <div>
+                        <input onchange="changefontSize()" type="range" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2"></div>
+            <div class="col-lg-1 col-2"></div>
+            <div class="col-lg-1 col-2">
+                <div class="color-picker">
+                    <div>
+                        <input onchange="changeColor()" type="color" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2"></div>
+            <div class="col-lg-1 col-2">
+                <div class="left">
+                    <div>
+                        <i onclick="fontspace()" class="fa fa-align-left" id="L"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2">
+                <div class="mid">
+                    <div>
+                        <i onclick="fontspace()" class="fa fa-align-center" id="M"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2">
+                <div class="right">
+                    <div>
+                        <i onclick="fontspace()" class="fa fa-align-right" id="R"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2"></div>
+            </div>
+           <div class="row justify-content-evenly">
+            <div class="col-12">
+                <div class="btn-post">
+                    <div>
+                        <button onclick="createpost()">Post</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

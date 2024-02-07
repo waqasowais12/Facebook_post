@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    background-color: white;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post-head{
+    padding: 6%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile > div > img{
+    border-radius: 100%;
+    width: 50px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    gap: 10px;   
+}
+
+.profile > div > p{
+    margin: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile > div > span > select{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile > div > span > select:focus{
+    outline: none;
+}
+
+.profile > div > span > select > option{
+    background-color: white;
+    cursor: pointer;
+}
+.profile > div > span > select > option:focus{
+    outline: none;
+}
+.txt-area > div > textarea{
+    width: 100%;
+    /* text-align: center; */
+    color: black;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 200px;
+}
+.txt-area > div > textarea:focus{
+    outline: none;
+    border: none;
+}
+
+.box1 > div > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.font-style{
+    cursor: pointer;
+}
+
+.bold > div > h5{
+    font-weight: bold;
+}
+
+.italic > div > h5{
+    font-style: italic;
+}
+
+.btn-post > div > button{
+    text-align: center;
+    background-color: dodgerblue;
+    width: 100%;
+    height: 35px;
+    border-style: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-post > div > button:focus{
+    outline: none;
+}
+
+.color-picker > div > input{
+    border-radius: 100%;
+    width: 40px;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cross > div > i{
+    margin-left: 70%;
+    padding: 6% 8%;
+    margin-top: 6px;
+    background-color: darkgrey;
+    border-radius: 100%;
+    opacity: .4;
+    color: black;
+}
+
+@media only screen and (max-width:600px){
+    .box{
+        background-color: white;
+        width: 550px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .box1 > div > img{
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .head{
+        font-size: 20px;
+    }
+
+    .font-style{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width:500px){
+    .box{
+        background-color: white;
+        width: 550px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .head{
+        font-size: 17px;
+    }
+}
